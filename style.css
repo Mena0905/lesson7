@@ -41,3 +41,17 @@ img {
     vertical-align: middle;
     margin-right: 10px;
 }
+footer {
+    background: #00796b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+}

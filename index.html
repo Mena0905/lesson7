@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Первая помощь</title>
+    <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+    <header>
+        <h1>Первая помощь</h1>
+    </header>
+    <div class="container">
+        <section>
+            <h2 onclick="toggleVisibility(this)">Кровотечение</h2>
+            <ul>
+                <li><img src="https://via.placeholder.com/50" alt="Кровотечение">Наложите стерильную повязку на рану.</li>
+                <li><img src="https://via.placeholder.com/50" alt="Кровотечение">Прижмите повязку, чтобы остановить кровотечение.</li>
+                <li><img src="https://via.placeholder.com/50" alt="Кровотечение">Если кровотечение не останавливается, наложите жгут выше раны.</li>
+            </ul>
+        </section>
+        <section>
+            <h2 onclick="toggleVisibility(this)">Ожоги</h2>
+            <ul>
+                <li><img src="https://via.placeholder.com/50" alt="Ожоги">Охладите обожженное место под проточной водой в течение 10-20 минут.</li>
+                <li><img src="https://via.placeholder.com/50" alt="Ожоги">Не используйте лед или масло.</li>
+                <li><img src="https://via.placeholder.com/50" alt="Ожоги">Наложите стерильную повязку на ожог.</li>
+            </ul>
+        </section>
+        <section>
+            <h2 onclick="toggleVisibility(this)">Обморожение</h2>
+            <ul>
+                <li><img src="https://via.placeholder.com/50" alt="Обморожение">Переместите пострадавшего в теплое место.</li>
+                <li><img src="https://via.placeholder.com/50" alt="Обморожение">Постепенно согревайте обмороженные участки тела.</li>
+                <li><img src="https://via.placeholder.com/50" alt="Обморожение">Не трите обмороженные участки.</li>
+            </ul>
+        </section>
+        <section>
+            <h2 onclick="toggleVisibility(this)">Переломы</h2>
+            <ul>
+                <li><img src="https://via.placeholder.com/50" alt="Переломы">Обеспечьте неподвижность поврежденной конечности.</li>
+                <li><img src="https://via.placeholder.com/50" alt="Переломы">Наложите шину, если это возможно.</li>
+                <li><img src="https://via.placeholder.com/50" alt="Переломы">Избегайте перемещения пострадавшего без необходимости.</li>
+            </ul>
+        </section>
+        <section>
+            <h2 onclick="toggleVisibility(this)">Отравления</h2>
+            <ul>
+                <li><img src="https://via.placeholder.com/50" alt="Отравления">Выясните, чем отравился пострадавший.</li>
+                <li><img src="https://via.placeholder.com/50" alt="Отравления">Не вызывайте рвоту, если это не рекомендовано специалистом.</li>
+                <li><img src="https://via.placeholder.com/50" alt="Отравления">Обратитесь за медицинской помощью как можно скорее.</li>
+            </ul>
+        </section>
+    </div>
+    <script>
+        function toggleVisibility(element) {
+            const ul = element.nextElementSibling;
+            ul.style.display = ul.style.display === 'none' || ul.style.display === '' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
